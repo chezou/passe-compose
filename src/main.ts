@@ -1,33 +1,4 @@
-interface Question {
-  verb: string;
-  sentence: string;
-  answer: "être" | "avoir";
-  translation: string;
-  hint: string;
-}
-
-const questions: Question[] = [
-  { verb: "manger", sentence: "J'___ mangé une pomme.", answer: "avoir", translation: "to eat", hint: "Regular verb → avoir" },
-  { verb: "aller", sentence: "Elle ___ allée au cinéma.", answer: "être", translation: "to go", hint: "Movement verb → être" },
-  { verb: "venir", sentence: "Ils ___ venus hier.", answer: "être", translation: "to come", hint: "Movement verb → être" },
-  { verb: "faire", sentence: "Nous ___ fait nos devoirs.", answer: "avoir", translation: "to do/make", hint: "Regular verb → avoir" },
-  { verb: "partir", sentence: "Tu ___ parti(e) tôt.", answer: "être", translation: "to leave", hint: "Movement verb → être" },
-  { verb: "voir", sentence: "J'___ vu un film.", answer: "avoir", translation: "to see", hint: "Regular verb → avoir" },
-  { verb: "arriver", sentence: "Marie ___ arrivée en retard.", answer: "être", translation: "to arrive", hint: "Movement verb → être" },
-  { verb: "prendre", sentence: "Il ___ pris le bus.", answer: "avoir", translation: "to take", hint: "Regular verb → avoir" },
-  { verb: "naître", sentence: "Je ___ né(e) en 1990.", answer: "être", translation: "to be born", hint: "State change verb → être" },
-  { verb: "lire", sentence: "Elle ___ lu ce livre.", answer: "avoir", translation: "to read", hint: "Regular verb → avoir" },
-  { verb: "descendre", sentence: "Nous ___ descendus.", answer: "être", translation: "to go down", hint: "Movement verb → être" },
-  { verb: "écrire", sentence: "Tu ___ écrit une lettre.", answer: "avoir", translation: "to write", hint: "Regular verb → avoir" },
-  { verb: "mourir", sentence: "Il ___ mort en 1900.", answer: "être", translation: "to die", hint: "State change verb → être" },
-  { verb: "dormir", sentence: "J'___ dormi 8 heures.", answer: "avoir", translation: "to sleep", hint: "Regular verb → avoir" },
-  { verb: "tomber", sentence: "Elle ___ tombée.", answer: "être", translation: "to fall", hint: "Movement verb → être" },
-  { verb: "boire", sentence: "Nous ___ bu du café.", answer: "avoir", translation: "to drink", hint: "Regular verb → avoir" },
-  { verb: "rester", sentence: "Ils ___ restés à la maison.", answer: "être", translation: "to stay", hint: "State verb → être" },
-  { verb: "devenir", sentence: "Elle ___ devenue médecin.", answer: "être", translation: "to become", hint: "State change verb → être" },
-  { verb: "parler", sentence: "J'___ parlé français.", answer: "avoir", translation: "to speak", hint: "Regular verb → avoir" },
-  { verb: "monter", sentence: "Tu ___ monté(e) les escaliers.", answer: "être", translation: "to go up", hint: "Movement verb → être" },
-];
+import { type Question, questions } from "./questions.js";
 
 let currentQuestions: Question[] = [];
 let currentIndex = 0;
