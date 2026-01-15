@@ -1,0 +1,13 @@
+{
+  "name": "passe-compose",
+  "version": "1.0.0",
+  "description": "French passé composé quiz app",
+  "scripts": {
+    "build": "tsc && cp index.html dist/ && cp src/style.css dist/",
+    "dev": "tsc --watch",
+    "serve": "npx serve dist"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0"
+  }
+}

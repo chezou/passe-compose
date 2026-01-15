@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>French Passé Composé Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Passé Composé: Être ou Avoir?</h1>
+
+    <details class="card tip-card" id="tip">
+        <summary>Quick Tip</summary>
+        <div class="tip-content">
+            <p><strong>Avoir</strong> is used with most verbs.</p>
+            <p><strong>Être</strong> is used with:</p>
+            <p>Movement verbs: <code>aller, venir, arriver, partir, entrer, sortir, monter, descendre, tomber, passer, retourner</code></p>
+            <p>State changes: <code>naître, mourir, devenir, rester</code></p>
+            <p>Reflexive verbs: <code>se lever, se laver...</code></p>
+        </div>
+    </details>
+
+    <div id="quiz-area">
+        <div class="progress">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <div class="score" id="score">Question 1 / 10</div>
+
+        <div class="card" id="question-card">
+            <div class="question" id="question-text"></div>
+            <div class="verb" id="verb-info"></div>
+            <div class="buttons" id="answer-buttons">
+                <button class="btn-etre" onclick="checkAnswer('être')">Être</button>
+                <button class="btn-avoir" onclick="checkAnswer('avoir')">Avoir</button>
+            </div>
+            <div class="feedback" id="feedback">
+                <div id="feedback-text"></div>
+                <div class="explanation" id="explanation"></div>
+            </div>
+            <button class="btn-next" id="next-btn" onclick="nextQuestion()">Next</button>
+        </div>
+    </div>
+
+    <div class="card final-score hidden" id="result-card">
+        <h2 id="final-text"></h2>
+        <p id="final-message"></p>
+        <button class="btn-restart" onclick="restartQuiz()">Try Again</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
